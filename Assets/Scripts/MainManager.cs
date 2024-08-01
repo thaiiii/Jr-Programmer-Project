@@ -5,7 +5,7 @@ using System.IO;
 
 public class MainManager : MonoBehaviour
 {
-    public static MainManager Instance; 
+    public static MainManager Instance { get; private set; } // add getter, private setter to the end of the line; 
 
     public Color TeamColor; // new variable declared
     
